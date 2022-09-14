@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Namespace of Spring file -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd"
+	xmlns:p="http://www.springframework.org/schema/p">
+
+	<bean name="p1" class="com.bean.xml.Pasta"
+		init-method="init" destroy-method="destroy">
+		<!-- <constructor-arg value="450" /> -->
+		<property name="price" value="450" />
+	</bean>
+
+</beans>

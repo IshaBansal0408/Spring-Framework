@@ -10,8 +10,9 @@
 	<bean class="com.springcore.conInj.Certi" name="certi1">
 		<constructor-arg value="Python" />
 	</bean>
-	
-	<bean class="com.springcore.conInj.Certi" name="certi2" c:name="Java" />
+
+	<bean class="com.springcore.conInj.Certi" name="certi2"
+		c:name="Java" />
 
 	<bean class="com.springcore.conInj.Person" name="person1">
 		<constructor-arg value="1" />
@@ -23,6 +24,11 @@
 		<constructor-arg value="Farah" type="String" />
 		<constructor-arg value="2" type="int" />
 		<constructor-arg ref="certi2" />
+	</bean>
+
+	<bean class="com.springcore.conInj.Addition" name="add1">
+		<constructor-arg value="5" type="int" index = "1"/>
+		<constructor-arg value="3" type="int" index ="0"/>
 	</bean>
 
 </beans>
