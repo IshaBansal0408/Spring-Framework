@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Namespace of Spring file -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Declare Student Class as Student Class -->
+	<bean class="com.springcore.Student" name="student1">
+		<!-- Setter Dependency Injection -->
+		<property name="studentId">
+			<value>1</value>
+		</property>
+		<property name="studentName">
+			<value>Reena Tiwari</value>
+		</property>
+		<property name="studentAddress">
+			<value>Mumbai</value>
+		</property>
+	</bean>
+
+</beans>
