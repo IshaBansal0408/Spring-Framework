@@ -4,20 +4,32 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
- http://www.springframework.org/schema/beans/spring-beans.xsd">
+ http://www.springframework.org/schema/beans/spring-beans.xsd"
+	xmlns:p="http://www.springframework.org/schema/p">
 
 	<!-- Declare Student Class as Student Class -->
 	<bean class="com.springcore.Student" name="student1">
 		<!-- Setter Dependency Injection -->
-		<property name="studentId">
-			<value>1</value>
-		</property>
-		<property name="studentName">
-			<value>Reena Tiwari</value>
-		</property>
-		<property name="studentAddress">
-			<value>Mumbai</value>
-		</property>
+		<property name="studentId" value="1" />
+		<!-- <value>1</value> </property> -->
+		<property name="studentName" value="Reena Tiwari" />
+		<!-- <value>Reena Tiwari</value> </property> -->
+		<property name="studentAddress" value="Mumbai" />
+		<!-- <value>Mumbai</value> </property> -->
 	</bean>
 
+	<!-- Value as Attribute -->
+	<bean class="com.springcore.Student" name="student2">
+		<property name="studentId" value="2" />
+		<property name="studentName" value="Jazz Doe" />
+		<property name="studentAddress" value="America" />
+	</bean>
+
+	<!-- p Schema Value -->
+	<bean class="com.springcore.Student" name="student3"
+		p:studentId="3" p:studentName="Hareesh sharma"
+		p:studentAddress="Gujrat"></bean>
+
+	<!-- Injecting Collection Types -->
+	 
 </beans>
