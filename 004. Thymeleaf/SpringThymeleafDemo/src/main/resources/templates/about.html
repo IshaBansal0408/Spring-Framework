@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.com">
+<head>
+<meta charset="UTF-8" />
+<title>About the Website</title>
+</head>
+<body>
+	<h1>Welcome to the website</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
+		voluptatibus molestiae omnis saepe praesentium tempore repellat
+		adipisci mollitia iure ducimus! Quia dolorem sit sed et temporibus
+		assumenda commodi natus rem! Lorem ipsum dolor sit amet, consectetur
+		adipisicing elit. Rem et maxime ut eius saepe in aliquam commodi nihil
+		odit dolor optio illum enim molestias consequatur perspiciatis natus
+		qui impedit. Ratione.</p>
+
+	<h2>Name of the Developer :</h2>
+	<span th:text="${#strings.toUpperCase(devName)}"></span>
+	<h2>Current Date is :</h2>
+	<span th:text="${curDate}"></span>
+	
+</body>
+</html>

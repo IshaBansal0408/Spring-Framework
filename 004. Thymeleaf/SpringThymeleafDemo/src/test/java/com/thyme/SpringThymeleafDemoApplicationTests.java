@@ -1,10 +1,10 @@
-package com.sts;
+package com.thyme;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FirstStsProjectApplicationTests {
+class SpringThymeleafDemoApplicationTests {
 
 	@Test
 	void contextLoads() {
